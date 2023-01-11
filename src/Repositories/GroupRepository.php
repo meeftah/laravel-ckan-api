@@ -12,16 +12,8 @@ class GroupRepository extends BaseRepository
      *
      * @return array
      */
-    public function all($data)
+    public function all($data = [])
     {
-        $defaults = [
-            'limit' => $this->per_page,
-            'offset' => 0,
-            'all_fields' => true
-        ];
-
-        $data = array_merge($defaults, $data);
-
         return parent::list($data);
     }
 }

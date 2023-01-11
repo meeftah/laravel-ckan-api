@@ -20,14 +20,6 @@ class DatasetRepository extends BaseRepository
      */
     public function all($data = [])
     {
-        $defaults = [
-            'include_private' => true,
-            'rows' => $this->per_page,
-            'start' => 0,
-        ];
-
-        $data = array_merge($defaults, $data);
-
         return parent::search($data);
     }
 

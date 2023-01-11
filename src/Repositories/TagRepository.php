@@ -13,12 +13,6 @@ class TagRepository extends BaseRepository
      */
     public function all($data = [])
     {
-        $defaults = [
-            'all_fields' => true,
-        ];
-
-        $data = array_merge($defaults, $data);
-
         return parent::list($data);
     }
 }

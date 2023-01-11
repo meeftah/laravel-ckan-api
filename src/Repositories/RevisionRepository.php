@@ -14,10 +14,6 @@ class RevisionRepository extends BaseRepository
      */
     public function all($data)
     {
-        $defaults = [];
-
-        $data = array_merge($defaults, $data);
-
         return parent::list($data);
     }
 }

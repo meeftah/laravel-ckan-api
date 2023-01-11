@@ -14,14 +14,6 @@ class UserRepository extends BaseRepository
      */
     public function all(array $data = [])
     {
-        $defaults = [
-            'all_fields' => true,
-            'limit' => $this->per_page,
-            'offset' => 0,
-        ];
-
-        $data = array_merge($defaults, $data);
-
         return parent::list($data);
     }
 }

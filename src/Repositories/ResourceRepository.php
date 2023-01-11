@@ -17,13 +17,6 @@ class ResourceRepository extends BaseRepository
      */
     public function all($data = [])
     {
-        $defaults = [
-            'limit' => $this->per_page,
-            'offset' => 0,
-        ];
-
-        $data = array_merge($defaults, $data);
-
         return parent::search($data);
     }
 

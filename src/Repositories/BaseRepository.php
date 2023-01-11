@@ -17,13 +17,6 @@ class BaseRepository
     protected $action_name = '';
 
     /**
-     * Per page, paginated results
-     *
-     * @var int
-     */
-    protected $per_page = 15;
-
-    /**
      * @var Client
      */
     protected $client;
@@ -51,8 +44,6 @@ class BaseRepository
      */
     public function __construct(Client $client)
     {
-        $this->per_page = config('ckan_api.repositories.per_page', $this->per_page);
-
         $this->setUri("action/{$this->action_name}_{{METHOD}}");
 
         $this->client = $client;
