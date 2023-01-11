@@ -5,6 +5,7 @@ namespace Germanazo\CkanApi;
 use Germanazo\CkanApi\Exceptions\MethodNotImplementedException;
 use Germanazo\CkanApi\Factories\RepositoryFactory;
 use GuzzleHttp\Client;
+use Illuminate\Support\Str;
 
 /**
  * Ckan api client
@@ -44,7 +45,7 @@ class CkanApiClient
      */
     public function __call($method, $arguments)
     {
-        $className = 'Germanazo\CkanApi\Repositories\\'.ucfirst(camel_case($method)).'Repository';
+        $className = 'Germanazo\CkanApi\Repositories\\'.ucfirst(Str::camel($method)).'Repository';
 
         if (!class_exists($className)) {
             throw new MethodNotImplementedException("Repository $method is not implemented");
