@@ -1,5 +1,5 @@
 {
-  "name": "meeftah/laravel-ckan-api",
+  "name": "germanazo/laravel-ckan-api",
   "description": "Laravel 5 client for CKAN Api",
   "keywords": [
     "laravel",
@@ -7,14 +7,14 @@
     "ckan",
     "php"
   ],
-  "homepage": "https://github.com/meeftah/laravel-ckan-api",
+  "homepage": "https://github.com/Germanaz0/laravel-ckan-api",
   "license": "MIT",
   "authors": [
     {
       "name": "German Bortoli",
       "email": "germanazo@gmail.com",
       "homepage": "https://github.com/Germanaz0",
-      "role": "Author"
+      "role": "Developer"
     }
   ],
   "require": {
@@ -39,10 +39,5 @@
     "mockery/mockery": "^0.9.4",
     "laravel/laravel": "5.4.*"
   },
-  "minimum-stability": "dev",
-  "config": {
-    "allow-plugins": {
-      "kylekatarnls/update-helper": true
-    }
-  }
+  "minimum-stability": "dev"
 }
