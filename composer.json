@@ -44,11 +44,5 @@
     "allow-plugins": {
       "kylekatarnls/update-helper": true
     }
-  },
-  "repositories": [
-      {
-          "type": "vcs",
-          "url": "git@github.com:meeftah/laravel-ckan-api.git"
-      }
-  ]
+  }
 }
